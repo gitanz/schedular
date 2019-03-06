@@ -1,0 +1,100 @@
+table.schedules-wrapper{
+    background: #FFF;
+}
+
+table.schedules-wrapper th,table.schedules-wrapper td{
+    padding:5px;
+}
+
+table.schedules-wrapper tr.schedular-titlebar th,
+table.schedules-wrapper tr.schedular-days td,
+table.schedules-wrapper tr.month-row td,
+table.schedules-wrapper tr.schedular-days th
+{
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 6px;
+    border: 1px solid #FFF;
+}
+
+table.schedules-wrapper th,table.schedules-wrapper tr.month-row td{
+    width: 70px;
+    height: 42.5px;
+    line-height: 42.5px;
+}
+
+
+table.schedules-wrapper thead.schedular-head tr.schedular-titlebar th.prev-year,
+table.schedules-wrapper thead.schedular-head tr.schedular-titlebar th.prev-month{
+    text-align: left !important;
+}
+
+table.schedules-wrapper thead.schedular-head tr.schedular-titlebar th.next-year,
+table.schedules-wrapper thead.schedular-head tr.schedular-titlebar th.next-month{
+    text-align: right !important;
+}
+
+table.schedules-wrapper td.active {
+    background: #337AB7;
+    color: #FFF;
+}
+
+table.schedules-wrapper tbody td{
+    cursor: pointer;
+}
+
+.schedule-disabled{
+    background:#CCC;
+    pointer-events: none;
+    border-radius: 6px; 
+    border: 1px solid #FFF;
+
+}
+
+.today {
+    position: relative;
+}
+
+.today:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    border-right: 3px solid #337AB7;
+    border-bottom: 3px solid #337AB7;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
+}
+.has-scheduled-dates {
+    position: relative;
+}
+
+.has-scheduled-dates:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    border-right: 3px solid #337AB7;
+    border-bottom: 3px solid #337AB7;
+    border-left: 3px solid transparent;
+    border-top: 3px solid transparent;
+}
+
+#schedular-footer{
+    background: #FFF;
+}
+
+.year-identifier, .month-identifier{
+    cursor: pointer;
+}
+
+tr.schedular-days{
+    cursor: default;
+}
